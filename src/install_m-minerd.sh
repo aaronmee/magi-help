@@ -1,7 +1,7 @@
 #!/bin/bash
 
-#This script installs m-minerd in your system
-
+# This script installs m-minerd (m-cpuminer-v2) on your system.
+# The miner is going to be installed under /usr/local/bin so you can run it without the './'.
 
 sudo apt-get update -qq && sudo apt-get upgrade -qq -y
 sudo apt-get install -qq git libcurl4-openssl-dev -y
@@ -19,5 +19,5 @@ echo "Installing... 75%"
 sudo make install > /dev/null
 cd ..
 rm -rf m-cpuminer-v2
-echo "Successfully installed m-minerd in your system."
+echo "Successfully installed m-minerd on your system."
 echo "You can check the installation by running 'm-minerd -V'
